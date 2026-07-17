@@ -1,0 +1,83 @@
+.hero-section {
+  background-image: url("images/bg-picture.jpg"); /* replace with your image path */
+  background-size: cover;       /* makes image fill the section */
+  background-position: center;  /* centers the image */
+  position: relative;
+  min-height: 70vh;             /* controls height of hero */
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5); /* dark overlay for readability */
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2; /* ensures text sits above the overlay */
+}
+
+.nav-pills .nav-link {
+  color: #fff;              /* default text color */
+  font-weight: 500;         /* slightly bold */
+  padding: 0.5rem 1rem;     /* spacing */
+  transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #dc6a02; /* orange hover background */
+  color: #fff;               /* keep text white */
+  border-radius: 20px;       /* rounded pill look */
+}
+
+.nav-pills .nav-link.active {
+  background-color: #004c71; /* dark blue active link */
+  color: #fff;
+  border-radius: 20px;
+}
+
+.nav-pills .nav-link {
+  color: #004c71;              /* dark blue text */
+  font-weight: 600;            /* bold for visibility */
+  border: 2px solid #004c71;   /* border to make links visible */
+  border-radius: 20px;         /* rounded pill look */
+  margin: 0 5px;               /* spacing between links */
+  transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #dc6a02;   /* orange hover background */
+  color: #fff;                 /* white text on hover */
+  border-color: #dc6a02;       /* border matches hover color */
+}
+
+.nav-pills .nav-link.active {
+  background-color: #004c71;   /* dark blue active background */
+  color: #fff;                 /* white text when active */
+  border-color: #004c71;
+}
+
+.nav-pills .nav-link {
+  background-color: #fdf2e6;   /* light background for visibility */
+  color: #004c71;              /* dark blue text */
+  font-weight: 600;
+  border: 2px solid #004c71;   /* border for definition */
+  border-radius: 20px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #dc6a02;   /* orange hover background */
+  color: #fff;                 /* white text on hover */
+  border-color: #dc6a02;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #004c71;   /* dark blue active background */
+  color: #fff;                 /* white text when active */
+  border-color: #004c71;
+}
