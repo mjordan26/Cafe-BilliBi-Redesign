@@ -1,78 +1,49 @@
-.hero-section {
-  background-image: url("images/bg-picture.jpg"); /* replace with your image path */
-  background-size: cover;       /* makes image fill the section */
-  background-position: center;  /* centers the image */
-  position: relative;
-  min-height: 70vh;             /* controls height of hero */
+body{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.hero-section::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.5); /* dark overlay for readability */
-  z-index: 1;
+.navbar-brand{
+    color:#8B4513;
+    font-size:1.8rem;
 }
 
-.hero-section .container {
-  position: relative;
-  z-index: 2; /* ensures text sits above the overlay */
+.nav-link{
+    color:#333;
+    font-weight:500;
+    margin-left:15px;
 }
 
-.nav-pills .nav-link {
-  color: #fff;              /* default text color */
-  font-weight: 500;         /* slightly bold */
-  padding: 0.5rem 1rem;     /* spacing */
-  transition: all 0.3s ease;
+.nav-link:hover{
+    color:#8B4513;
 }
 
-.nav-pills .nav-link:hover {
-  background-color: #dc6a02; /* orange hover background */
-  color: #fff;               /* keep text white */
-  border-radius: 20px;       /* rounded pill look */
+/* Hero Section */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
-.nav-pills .nav-link.active {
-  background-color: #004c71; /* dark blue active link */
-  color: #fff;
-  border-radius: 20px;
+.hero h1{
+    font-size:4rem;
 }
 
-.nav-pills .nav-link {
-  color: #004c71;              /* dark blue text */
-  font-weight: 600;            /* bold for visibility */
-  border: 2px solid #004c71;   /* border to make links visible */
-  border-radius: 20px;         /* rounded pill look */
-  margin: 0 5px;               /* spacing between links */
-  transition: all 0.3s ease;
+.hero p{
+    max-width:650px;
+    margin:auto;
+    margin-bottom:30px;
 }
 
-.nav-pills .nav-link:hover {
-  background-color: #dc6a02;   /* orange hover background */
-  color: #fff;                 /* white text on hover */
-  border-color: #dc6a02;       /* border matches hover color */
+#about{
+    background-color:#f8f9fa;
 }
 
-.nav-pills .nav-link.active {
-  background-color: #004c71;   /* dark blue active background */
-  color: #fff;                 /* white text when active */
-  border-color: #004c71;
+#about h2{
+    color:#8B4513;
 }
-
-.nav-pills .nav-link {
-  background-color: #fdf2e6;   /* light background for visibility */
-  color: #004c71;              /* dark blue text */
-  font-weight: 600;
-  border: 2px solid #004c71;   /* border for definition */
-  border-radius: 20px;
-  margin: 0 5px;
-  transition: all 0.3s ease;
-}
-
-.nav-pills .nav-link:hover {
-  background-color: #dc6a02;   /* orange hover background */
-  color: #fff;                 /* white text on hover */
-  border-color: #dc6a02;
-}
-

@@ -8,49 +8,109 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-          <!-- Navbar Section -->
-        <div class="container">
-   <header class="d-flex justify-content-between align-items-center py-3 px-4">
-    <a href="#" class="navbar-brand mb-2">
-      <img src="images/Billibi-Logo3.webp" alt="BilliBi Logo" height="60">
-    </a>
-    <ul class="nav nav-pills">
-      <li class="nav-item">
-        <a href="#" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">Menu</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">Contact Us</a>
-      </li>
-    </ul>
-  </header>
-</div>
-   
- 
+   <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
 
-        <!-- Hero Section -->
-    <div class="py-5 hero-section">
-  <div class="container text-center">
-    <h1 class="display-5 fw-bold text-white">Welcome to BilliBi</h1>
-    <div class="col-lg-6 mx-auto">
-      <p class="fs-5 mb-4 text-white">
-        Where every dish is served with a sprinkling of pride, a slice of life, and a dash of warmth. 
-        After all, nothing beats real food prepared by real people, shared in a space that feels like home.
-      </p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
-          View Menu
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold" href="#">
+            BilliBi Café
+        </a>
+
+        <!-- Hamburger Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-    </div>
-  </div>
- 
 
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+<!-- Hero Section -->
+<section class="hero d-flex align-items-center text-center text-white">
+
+    <div class="container">
+
+        <h1 class="display-3 fw-bold">
+            Welcome to BilliBi Café
+        </h1>
+
+        <p class="lead mt-3">
+            Fresh coffee, delicious meals and a warm atmosphere for every guest.
+        </p>
+
+        <a href="#menu" class="btn btn-warning btn-lg me-3">
+            View Menu
+        </a>
+
+        <a href="#contact" class="btn btn-outline-light btn-lg">
+            Contact Us
+        </a>
+
+    </div>
+
+</section>
+<!-- About Section -->
+<section id="about" class="py-5">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+                <img src="images/about.jpg" alt="About BilliBi Café" class="img-fluid rounded shadow">
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0">
+
+                <h2 class="fw-bold mb-4">About BilliBi Café</h2>
+
+                <p>
+                    BilliBi Café is a welcoming space where friends and families come together to enjoy freshly prepared meals, premium coffee, and exceptional service. Our café offers a warm atmosphere, making every visit a memorable experience.
+                </p>
+
+                <p>
+                    Whether you're stopping by for breakfast, lunch, or a relaxing coffee break, we are committed to serving quality food made with care.
+                </p>
+
+                <a href="#contact" class="btn btn-dark mt-3">
+                    Visit Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
     
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
