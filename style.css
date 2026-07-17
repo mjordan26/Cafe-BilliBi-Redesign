@@ -1,11 +1,23 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+:root{
+    --primary-color:#8B4513;
+    --secondary-color:#f8f9fa;
+    --dark-color:#2d2d2d;
 }
 
-.navbar-brand{
-    color:#8B4513;
-    font-size:1.8rem;
+
+body{
+    font-family: 'Poppins', sans-serif;
 }
+
+.nav-link{
+    transition:.3s;
+}
+
+.nav-link{
+    color:#333;
+    font-weight:500;
+    margin-left:15px;
+}s
 
 .nav-link{
     color:#333;
@@ -14,7 +26,7 @@ body{
 }
 
 .nav-link:hover{
-    color:#8B4513;
+    color:var(--primary-color);
 }
 
 /* Hero Section */
@@ -45,11 +57,12 @@ body{
 }
 
 #about h2{
-    color:#8B4513;
+    color:var(--primary-color);
 }
 
+
 #why-us h2{
-    color:#8B4513;
+    color:var(--primary-color);
 }
 
 #why-us .shadow-sm{
@@ -61,7 +74,7 @@ body{
 }
 
 #gallery h2{
-    color:#8B4513;
+    color:var(--primary-color);
 }
 
 .gallery-img{
@@ -76,7 +89,7 @@ body{
 }
 
 #contact h2{
-    color:#8B4513;
+    color:var(--primary-color);
 }
 
 .form-control{
@@ -86,4 +99,76 @@ body{
 .form-control:focus{
     border-color:#8B4513;
     box-shadow:none;
+}
+
+.footer{
+    background:#2d2d2d;
+    color:white;
+}
+
+.footer h4{
+    color:#c58b4a;
+    margin-bottom:20px;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer a:hover{
+    color:#c58b4a;
+}
+
+.social-icon{
+    font-size:1.5rem;
+    margin-right:15px;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+.cafe-icon{
+    color:var(--primary-color);
+}
+
+#menu h2{
+    color:var(--primary-color);
+}
+
+.btn-dark{
+    background-color:var(--primary-color);
+    border:none;
+}
+
+.btn-dark:hover{
+    background-color:#6d3410;
+}
+
+.btn-outline-dark{
+    border:2px solid var(--primary-color);
+    color:var(--primary-color);
+}
+
+.btn-outline-dark:hover{
+    background-color:var(--primary-color);
+    color:white;
+}
+
+.navbar .nav-link{
+    color:#333;
+    font-weight:500;
+    margin-left:15px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active{
+    color:var(--primary-color);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active{
+    color: var(--primary-color);
 }
