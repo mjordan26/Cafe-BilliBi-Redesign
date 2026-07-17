@@ -47,3 +47,15 @@ body{
 #about h2{
     color:#8B4513;
 }
+
+#why-us h2{
+    color:#8B4513;
+}
+
+#why-us .shadow-sm{
+    transition:0.3s;
+}
+
+#why-us .shadow-sm:hover{
+    transform:translateY(-8px);
+}
