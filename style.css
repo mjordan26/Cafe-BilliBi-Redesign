@@ -59,3 +59,18 @@ body{
 #why-us .shadow-sm:hover{
     transform:translateY(-8px);
 }
+
+#gallery h2{
+    color:#8B4513;
+}
+
+.gallery-img{
+    height:250px;
+    width:100%;
+    object-fit:cover;
+    transition:0.3s;
+}
+
+.gallery-img:hover{
+    transform:scale(1.05);
+}
