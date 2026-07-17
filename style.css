@@ -74,3 +74,16 @@ body{
 .gallery-img:hover{
     transform:scale(1.05);
 }
+
+#contact h2{
+    color:#8B4513;
+}
+
+.form-control{
+    border-radius:10px;
+}
+
+.form-control:focus{
+    border-color:#8B4513;
+    box-shadow:none;
+}
